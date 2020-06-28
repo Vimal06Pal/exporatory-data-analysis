@@ -124,28 +124,28 @@ def showing_fit_kws(cancer_df):
 
 
 if __name__ == "__main__":
-    # distplot_inc_bins(cancer_df)
+    distplot_inc_bins(cancer_df)
 
-    # distplot_only_kde(cancer_df)
+    distplot_only_kde(cancer_df)
 
-    # distplot_only_histogram(cancer_df)
+    distplot_only_histogram(cancer_df)
 
-    # distplot_rug(cancer_df)
+    distplot_rug(cancer_df)
 
-    # displot_with_two_kde_using_norm_in_scipy(cancer_df)
+    displot_with_two_kde_using_norm_in_scipy(cancer_df)
 
-    # color_changing_distplot(cancer_df)
+    color_changing_distplot(cancer_df)
 
-    # increase_size_of_fig(cancer_df)
+    increase_size_of_fig(cancer_df)
 
-    # print(cancer_df['mean radius'].sort_values()) # to get the range of the bins
+    print(cancer_df['mean radius'].sort_values()) # to get the range of the bins
 
-    # to_show_bins_on_the_x_axis_according_to_parameters(cancer_df)
+    to_show_bins_on_the_x_axis_according_to_parameters(cancer_df)
 
-    # showing_dist_kws(cancer_df)
+    showing_dist_kws(cancer_df)
 
-    # showing_kde_kws(cancer_df)
+    showing_kde_kws(cancer_df)
 
-    # showing_rugplot_kws(cancer_df)
+    showing_rugplot_kws(cancer_df)
 
     showing_fit_kws(cancer_df)
