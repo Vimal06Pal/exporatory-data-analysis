@@ -1,4 +1,4 @@
-name: Deploy to Main Branch (Windows)
+name: Deploy to Develop Branch (Windows)
 
 on:
   push:
