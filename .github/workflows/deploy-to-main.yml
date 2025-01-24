@@ -21,13 +21,13 @@ jobs:
         git config --global user.email "vimal.pal.5205@gmail.com"
 
     # Step 3: Merge changes from develop into main
-    - name: Merge Develop into Main
+    - name: Merge Develop into Master
       run: |
         git fetch origin
-        git checkout main
+        git checkout master
         git merge origin/develop --no-edit
 
     # Step 4: Push changes to the main branch
-    - name: Push to Main
+    - name: Push to Master
       run: |
-        git push origin main
+        git push origin master
