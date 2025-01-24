@@ -1,0 +1,33 @@
+name: Deploy to Main Branch (Windows)
+
+on:
+  push:
+    branches:
+      - develop  # Trigger the pipeline on pushes to the develop branch
+
+jobs:
+  deploy:
+    runs-on: windows-latest  # Use a Windows environment
+
+    steps:
+    # Step 1: Checkout the code from the develop branch
+    - name: Checkout Code
+      uses: actions/checkout@v3
+
+    # Step 2: Configure Git for committing changes
+    - name: Configure Git
+      run: |
+        git config --global user.name "Vimal06Pal"
+        git config --global user.email "vimal.pal.5205@gmail.com"
+
+    # Step 3: Merge changes from develop into main
+    - name: Merge Develop into Main
+      run: |
+        git fetch origin
+        git checkout main
+        git merge origin/develop --no-edit
+
+    # Step 4: Push changes to the main branch
+    - name: Push to Main
+      run: |
+        git push origin main
